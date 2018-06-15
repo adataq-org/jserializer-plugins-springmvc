@@ -1,4 +1,4 @@
-package io.felipepoliveira.jserializer.plugins.spring;
+package org.adataq.jserializer.plugins.spring;
 
 import java.util.List;
 

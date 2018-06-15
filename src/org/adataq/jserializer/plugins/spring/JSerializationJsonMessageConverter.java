@@ -1,4 +1,4 @@
-package io.felipepoliveira.jserializer.plugins.spring;
+package org.adataq.jserializer.plugins.spring;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,6 +9,9 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.adataq.jserializer.JSerializer;
+import org.adataq.jserializer.json.JfoObject;
+import org.adataq.jserializer.json.JsonStructure;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.MediaType;
@@ -19,10 +22,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-
-import io.felipepoliveira.jserializer.JSerializer;
-import io.felipepoliveira.jserializer.json.JfoObject;
-import io.felipepoliveira.jserializer.json.JsonStructure;
 
 @Component
 public class JSerializationJsonMessageConverter implements HttpMessageConverter<Object>{
